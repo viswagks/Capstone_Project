@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="BDD Test Suite" verbose="1" parallel="none" thread-count="3" >
-    <test name="CAPSTONE PROJECT 4">
+<suite name="Capstone Project" verbose="1" parallel="none" thread-count="3" >
+    <test name="SELENIUM PROJECT">
         <classes>
             <class name="runner.TestRunner" />
+        </classes>
+    </test>
+
+    <test name="API PROJECT">
+        <classes>
+            <class name="testng.TestCases" />
         </classes>
     </test>
 </suite>
