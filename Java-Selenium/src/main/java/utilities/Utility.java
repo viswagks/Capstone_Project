@@ -68,7 +68,7 @@ public class Utility {
         select.selectByVisibleText(value);
     }
 
-    public String getValueFromDropdown(By identifier, String value) {
+    public String getValueFromDropdown(By identifier) {
         Select select = new Select(this.getDriver().findElement(identifier));
         return select.getFirstSelectedOption().getText();
     }

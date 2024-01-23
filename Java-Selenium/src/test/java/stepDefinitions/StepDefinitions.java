@@ -65,7 +65,7 @@ public class StepDefinitions extends Utility {
 
     @Then("I verify {string} is selected in {string}")
     public void verify_value(String value, String dropdown) {
-        selectFromDropdown(By.id(dropdown), value);
+        Assert.assertEquals(getValueFromDropdown(By.id(dropdown)), value);
     }
 
     @Then("I verify all of below {string} are present in page")
